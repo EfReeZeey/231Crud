@@ -3,18 +3,14 @@ package crud.model;
 import javax.persistence.*;
 
 @Entity
-@Table
 public class User {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name = "id")
     private int id;
 
-    @Column
     private String name;
 
-    @Column
     private int age;
 
     public int getId() {
